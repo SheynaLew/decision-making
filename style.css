@@ -1,0 +1,35 @@
+/*
+Colours
+#F8FFFF - background of page, text on darker divs
+#2C6664 - text on lighter divs.background
+#4EB5AF - banner
+*/
+
+body {
+    margin: 0px;
+    background-color: F8FFFF;
+    color: #2C6664;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 14px;
+    font-family: quicksand, verdana, arial, sans-serif;
+}
+
+header {
+    background-color: #4EB5AF;
+    margin-top: 0px;
+    padding: 0px;
+    height: 150px;
+}
+
+h1 {
+    color: #F8FFFF;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 48px;
+    letter-spacing: normal;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0px;
+}
+
