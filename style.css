@@ -54,6 +54,7 @@ h3 {
     margin-top: 4rem; 
 }
 
+
 .choice-one {
     float: left;
     margin-left: 20%;
@@ -64,3 +65,30 @@ h3 {
     margin-right: 20%;
 }
 
+.clear {
+    clear: both;
+}
+
+.choices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.choice-one-input {
+    width: 30%;
+    margin-right: 10%;
+    padding: 5px;
+    border: 0.05px solid #2C6664;
+    background-color: #D7F8F6;
+    color: #2C6664;
+}
+.choice-two-input {
+    width: 30%;
+    margin-left: 10%;
+    padding: 5px;
+    border: 0.05px solid #2C6664;
+    background-color: #D7F8F6;
+    color: #2C6664;
+}
