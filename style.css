@@ -55,15 +55,6 @@ h3 {
     margin-top: 4rem; 
 }
 
-button {
-    width: 20%;
-    height: 2rem;
-    background-color: #4EB5AF;
-    border: #4EB5AF 1px solid;
-    color: #FFFFFF;
-    font-size: inherit;
-}
-
 
 .choice-one {
     float: left;
@@ -91,6 +82,7 @@ button {
     width: 30%;
     margin-right: 10%;
     padding: 5px;
+    border-radius: 2px;
     border: 1px solid #4EB5AF;
     color: #2C6664;
 }
@@ -98,6 +90,7 @@ button {
     width: 30%;
     margin-left: 10%;
     padding: 5px;
+    border-radius: 2px;
     border: 1px solid #4EB5AF;
     color: #2C6664;
 }
@@ -107,4 +100,33 @@ button {
     justify-content: center;
     align-items: center;
     margin: 3rem;
+}
+
+.button {
+    width: 20%;
+    padding: 15px 20px;
+    border-radius: 4px;
+    background-color: #4EB5AF;
+    border: none;
+    color: #FFFFFF;
+    font-size: inherit;
+    text-align: center;
+    display: inline-block;
+}
+
+.button:hover {
+    width: 20%;
+    padding: 15px 20px;
+    border-radius: 4px;
+    background-color: #2C6664;
+    border: none;
+    color: #FFFFFF;
+    font-size: inherit;
+    text-align: center;
+    display: inline-block;
+}
+
+.icons {
+    width:20%;
+    
 }
