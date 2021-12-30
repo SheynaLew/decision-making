@@ -95,17 +95,17 @@ h3 {
     color: #2C6664;
 }
 
-.submit-button {
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 3rem;
 }
 
-.button {
+.submit-button {
     width: 10em;
     padding: 15px 20px;
-    border-radius: 4px;
+    border-radius: 20px;
     background-color: #4EB5AF;
     border: none;
     color: #FFFFFF;
@@ -114,10 +114,10 @@ h3 {
     display: inline-block;
 }
 
-.button:hover {
+.submit-button:hover {
     width: 10em;
     padding: 15px 20px;
-    border-radius: 4px;
+    border-radius: 20px;
     background-color: #2C6664;
     border: none;
     color: #FFFFFF;
@@ -127,7 +127,7 @@ h3 {
 }
 
 .icons {
-    margin: 5%;
+    margin: 10% 5% 5%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -137,4 +137,28 @@ h3 {
 
 .icon {
     width:20%;
+}
+
+.play-button {
+    width: 10em;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: #4EB5AF;
+    border: none;
+    color: #FFFFFF;
+    font-size: inherit;
+    text-align: center;
+    display: inline-block;
+}
+
+.play-button:hover {
+    width: 10em;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: #2C6664;
+    border: none;
+    color: #FFFFFF;
+    font-size: inherit;
+    text-align: center;
+    display: inline-block;
 }
