@@ -3,6 +3,7 @@ Colours
 #F8FFFF - background of page, text on darker divs
 #2C6664 - text on lighter divs.background
 #4EB5AF - banner
+#D7F8F6 - button
 */
 
 body {
@@ -17,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #4EB5AF;
+    background-color: #2C6664;
     margin-top: 0px;
     padding: 0px;
     height: 150px;
@@ -54,6 +55,15 @@ h3 {
     margin-top: 4rem; 
 }
 
+button {
+    width: 20%;
+    height: 2rem;
+    background-color: #4EB5AF;
+    border: #4EB5AF 1px solid;
+    color: #FFFFFF;
+    font-size: inherit;
+}
+
 
 .choice-one {
     float: left;
@@ -74,21 +84,27 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .choice-one-input {
     width: 30%;
     margin-right: 10%;
     padding: 5px;
-    border: 0.05px solid #2C6664;
-    background-color: #D7F8F6;
+    border: 1px solid #4EB5AF;
     color: #2C6664;
 }
 .choice-two-input {
     width: 30%;
     margin-left: 10%;
     padding: 5px;
-    border: 0.05px solid #2C6664;
-    background-color: #D7F8F6;
+    border: 1px solid #4EB5AF;
     color: #2C6664;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
 }
