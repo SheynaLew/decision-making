@@ -103,7 +103,7 @@ h3 {
 }
 
 .button {
-    width: 20%;
+    width: 10em;
     padding: 15px 20px;
     border-radius: 4px;
     background-color: #4EB5AF;
@@ -115,7 +115,7 @@ h3 {
 }
 
 .button:hover {
-    width: 20%;
+    width: 10em;
     padding: 15px 20px;
     border-radius: 4px;
     background-color: #2C6664;
@@ -127,6 +127,14 @@ h3 {
 }
 
 .icons {
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.icon {
     width:20%;
-    
 }
