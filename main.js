@@ -3,9 +3,6 @@
     //Event listener, onclick
         //access element using getElementById
             //choiceOne and choiceTwo
-// On click of one the icons, randomly generate a computer move and select a winner
-// Display the winner and the winning choice
-
 let choiceOneInput = "";
 let choiceTwoInput = "";
 
@@ -18,6 +15,22 @@ function storeInput(){
     choiceTwoInput = inputValueTwo.value;
     //console.log(choiceOneInput, choiceTwoInput);
 }
+
+
+// On click of one the icons, randomly generate a computer move and select a winner
+    //Set icons as variables to use in an if function
+let userMoveRock = document.getElementById("rock");
+let userMovePaper = document.getElementById("paper");
+let userMoveScissors = document.getElementById("scissors");
+    //Randomly generate a computer move and set it to a variable
+        //Create an arraay containing rock, paper and scissors
+        //math.random to pick a random index
+        //set value of random index to a variable
+
+
+
+
+// Display the winner and the winning choice
 
 
 
