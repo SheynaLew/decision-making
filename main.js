@@ -22,10 +22,15 @@ function storeInput(){
 let userMoveRock = document.getElementById("rock");
 let userMovePaper = document.getElementById("paper");
 let userMoveScissors = document.getElementById("scissors");
+
     //Randomly generate a computer move and set it to a variable
         //Create an arraay containing rock, paper and scissors
-        //math.random to pick a random index
+let moveChoices = ["rock", "paper", "scissors"];
+        //math.random and math.floor to pick a random index between 0 and 2
+let computerMove = moveChoices[Math.floor(Math.random() * 3)];
+console.log(computerMove);
         //set value of random index to a variable
+
 
 
 
