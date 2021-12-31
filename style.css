@@ -139,26 +139,3 @@ h3 {
     width:20%;
 }
 
-.play-button {
-    width: 10em;
-    padding: 15px 20px;
-    border-radius: 20px;
-    background-color: #4EB5AF;
-    border: none;
-    color: #FFFFFF;
-    font-size: inherit;
-    text-align: center;
-    display: inline-block;
-}
-
-.play-button:hover {
-    width: 10em;
-    padding: 15px 20px;
-    border-radius: 20px;
-    background-color: #2C6664;
-    border: none;
-    color: #FFFFFF;
-    font-size: inherit;
-    text-align: center;
-    display: inline-block;
-}
