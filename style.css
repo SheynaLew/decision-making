@@ -70,7 +70,7 @@ h3 {
     clear: both;
 }
 
-.choices {
+.choicesInput {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -138,4 +138,6 @@ h3 {
 .icon {
     width:20%;
 }
+
+/*Hiding and revealing content - iteration 2*/
 
