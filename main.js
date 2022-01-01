@@ -46,11 +46,13 @@ function userChoosesRock () {
     if (computerMove === "rock") {
         alert(`Draw! Try again.`);
     } else if (computerMove === "scissors") {
+        hideChoices();
+        hideIcons();
         alert(`You win! ${choiceOneInput}`);
-        hideChoices();
     } else {
-        alert(`You lose! ${choiceTwoInput}`);
         hideChoices();
+        hideIcons();
+        alert(`You lose! ${choiceTwoInput}`);
     }
 }
         
@@ -59,11 +61,13 @@ function userChoosesPaper () {
     let computerMove = moveChoices[Math.floor(Math.random() * 3)];
     //console.log(computerMove);
     if (computerMove === "rock") {
+        hideChoices();
+        hideIcons();
         alert(`You win! ${choiceOneInput}`);
-        hideChoices();
     } else if (computerMove === "scissors") {
-        alert(`You lose! ${choiceTwoInput}`);
         hideChoices();
+        hideIcons();
+        alert(`You lose! ${choiceTwoInput}`);
     } else {
         alert(`Draw! Try again.`);
     }      
@@ -74,13 +78,15 @@ function userChoosesScissors () {
     let computerMove = moveChoices[Math.floor(Math.random() * 3)];
     //console.log(computerMove);
     if (computerMove === "rock") {
-        alert(`You lose! ${choiceTwoInput}`);
         hideChoices();
+        hideIcons();
+        alert(`You lose! ${choiceTwoInput}`);
     } else if (computerMove === "scissors") {
         alert(`Draw! Try again.`);
     } else {
-        alert(`You win! ${choiceOneInput}`);
         hideChoices();
+        hideIcons();
+        alert(`You win! ${choiceOneInput}`);
     }  
 }
 
@@ -91,4 +97,9 @@ function hideChoices() {
     }
   }
 
-
+function hideIcons () {
+    let icons = document.getElementsByClassName("icon");
+    for (let i=0; i<icons.length; i++) {
+        icons[i].style.display = "none";
+    }
+}
