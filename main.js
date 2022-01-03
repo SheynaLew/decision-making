@@ -98,7 +98,7 @@ function hideChoices() {
   }
 
 function hideIcons () {
-    let icons = document.getElementsByClassName("icon");
+    let icons = document.getElementsByClassName("icons");
     for (let i=0; i<icons.length; i++) {
         icons[i].style.display = "none";
     }

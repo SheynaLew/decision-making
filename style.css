@@ -141,3 +141,28 @@ h3 {
 
 /*Hiding and revealing content - iteration 2*/
 
+.winOrLose {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+}
+.winningIcon {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 40vh;
+    width: 28vw;
+}
+
+.losingIcon { 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 40vh;
+    width: 28vw;
+}
