@@ -17,6 +17,7 @@ function storeInput(){
 }
 
 
+
 // On click of one the icons, randomly generate a computer move and select a winner
     //Set icons as variables to use in an if function with event listeners for a click
 let userMoveRock = document.getElementById("rock").addEventListener("click", userChoosesRock, hideChoices);
@@ -97,11 +98,25 @@ function hideChoices() {
     }
   }
 
+function showChoices() {
+    let choicesContent = document.getElementsByClassName("choices");
+    for (let i=0; i < choicesContent.length; i++) {
+        choicesContent[i].style.display = "flex";
+    } 
+}
+
 function hideIcons () {
     let icons = document.getElementsByClassName("icons");
     for (let i=0; i<icons.length; i++) {
         icons[i].style.display = "none";
     }
+}
+
+function showIcons() {
+    let icons = document.getElementsByClassName("icons");
+    for (let i=0; i<icons.length; i++) {
+        icons[i].style.display = "flex";
+    } 
 }
 
 function showWinningIcon () {
@@ -112,10 +127,37 @@ function showWinningIcon () {
     }
 }
 
+function hideWinningIcon () {
+    let winningIcon = document.getElementsByClassName("winningIcon");
+    for (let i=0; i<winningIcon.length; i++) {
+        winningIcon[i].style.display = "none";
+    }
+}
+
 function showLosingIcon () {
     document.getElementById("losingChoice").innerHTML = choiceTwoInput;
     let losingIcon = document.getElementsByClassName("losingIcon");
     for (let i=0; i<losingIcon.length; i++) {
         losingIcon[i].style.display = "flex";
     }
+}
+
+function hideLosingIcon () {
+    let losingIcon = document.getElementsByClassName("losingIcon");
+    for (let i=0; i<losingIcon.length; i++) {
+        losingIcon[i].style.display = "none";
+    }
+}
+
+
+//get playagain button to go back to start of page
+
+document.getElementById("playAgainButton").addEventListener("click", restart);
+
+function restart(){
+  //functions to display all elements again
+  showChoices();
+  showIcons();
+  hideLosingIcon();
+  hideWinningIcon();
 }
