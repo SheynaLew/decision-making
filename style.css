@@ -153,15 +153,21 @@ h3 {
     display: none;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    height: 40vh;
-    width: 28vw;
 }
 
 .losingIcon { 
     display: none;
     justify-content: center;
     align-items: center;
+}
+
+#winningIcon {
+    margin: 0;
+    height: 40vh;
+    width: 28vw;
+}
+
+#losingIcon {
     margin: 0;
     height: 40vh;
     width: 28vw;

@@ -49,12 +49,10 @@ function userChoosesRock () {
         hideChoices();
         hideIcons();
         showWinningIcon();
-        alert(`You win! ${choiceOneInput}`);
     } else {
         hideChoices();
         hideIcons();
         showLosingIcon();
-        alert(`You lose! ${choiceTwoInput}`);
     }
 }
         
@@ -66,12 +64,10 @@ function userChoosesPaper () {
         hideChoices();
         hideIcons();
         showWinningIcon();
-        alert(`You win! ${choiceOneInput}`);
     } else if (computerMove === "scissors") {
         hideChoices();
         hideIcons();
         showLosingIcon();
-        alert(`You lose! ${choiceTwoInput}`);
     } else {
         alert(`Draw! Try again.`);
     }      
@@ -85,14 +81,12 @@ function userChoosesScissors () {
         hideChoices();
         hideIcons();
         showLosingIcon();
-        alert(`You lose! ${choiceTwoInput}`);
     } else if (computerMove === "scissors") {
         alert(`Draw! Try again.`);
     } else {
         hideChoices();
         hideIcons();
         showWinningIcon();
-        alert(`You win! ${choiceOneInput}`);
     }  
 }
 
@@ -111,11 +105,17 @@ function hideIcons () {
 }
 
 function showWinningIcon () {
-    let winningIcon = document.getElementById("winningIcon");
-    winningIcon.style.display = "flex";
+    document.getElementById("winningChoice").innerHTML = choiceOneInput;
+    let winningIcon = document.getElementsByClassName("winningIcon");
+    for (let i=0; i<winningIcon.length; i++) {
+        winningIcon[i].style.display = "flex";
+    }
 }
 
 function showLosingIcon () {
-    let losingIcon = document.getElementById("losingIcon");
-    losingIcon.style.display = "flex";
+    document.getElementById("losingChoice").innerHTML = choiceTwoInput;
+    let losingIcon = document.getElementsByClassName("losingIcon");
+    for (let i=0; i<losingIcon.length; i++) {
+        losingIcon[i].style.display = "flex";
+    }
 }
