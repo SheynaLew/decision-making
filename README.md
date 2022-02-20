@@ -1,3 +1,5 @@
+Project set during the winter break at the School of Code, Bootcamp 8, 2021. We were asked to "build something". I chose to create a rock paper scissors game to help me remember some of the basics of JavaScript which we learned at the beginning of the Bootcamp. I wanted to make this one part of a larger app, designed to help people make decisions. The idea is that when the user can't make a decision, they put two choices into input fields, then choose rock, paper, or scissors. One choice is assigned to the user, the other to the computer. Whoever wins the rock paper scissors game determines which decision wins. I would later like to add other features, such as a coin flip, a dice roll, and a card game.
+
 Basic development
 
 One page site - Rock Paper Scissors
